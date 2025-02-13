@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Profile</title>
+    <title>Aaron Lilly</title>
     <style>
         body {
             font-family: sans-serif;
@@ -22,7 +22,24 @@
 </head>
 <body>
 
-    <h1>Welcome to My Profile!</h1>
+   <h1>Aaron Lilly</h1>
+    <a href="aaron_lilly.vcf" download="aaron_lilly.vcf">
+        <button>Save Contact</button>
+    </a>
+
+    <script>
+        // JavaScript to create the vCard dynamically (optional, but recommended)
+        const vCardData = `BEGIN:VCARD
+VERSION:2.1
+N:Lilly;Aaron;;;
+FN:Aaron Lilly
+TEL;TYPE=CELL:336-546-2654
+END:VCARD`;
+
+        const link = document.querySelector('a[href="aaron_lilly.vcf"]');
+        const blob = new Blob([vCardData], { type: 'text/vcard' });
+        link.href = URL.createObjectURL(blob);
+    </script>
 
     <div class="profile-section">
         <div class="question">Relaxing Weekend:</div>
