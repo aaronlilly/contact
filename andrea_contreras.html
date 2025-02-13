@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Rose Contreras</title>
+    <title>Andrea Contreras</title>
     <style>
         body {
             font-family: sans-serif;
@@ -57,8 +57,8 @@
 </head>
 <body>
 
-    <h1>Andrea Rose Contreras</h1>
-    <a href="Andrea_Rose_Contreras.vcf" download="Andrea_Rose_Contreras.vcf">
+    <h1>Andrea Contreras</h1>
+    <a href="Andrea_Contreras.vcf" download="Andrea_Rose_Contreras.vcf">
         <button>Save Contact</button>
     </a>
     <img src="https://raw.githubusercontent.com/aaronlilly/contact/main/.jpg" alt="Andrea's profile picture">
@@ -67,11 +67,11 @@
         const vCardData = `BEGIN:VCARD
 VERSION:2.1
 N:Contreras;Andrea;;;
-FN:Andrea_Rose_Contreras.vcf
-TEL;TYPE=CELL:336-546-2654
+FN:Andrea Contreras
+TEL;TYPE=CELL:562-665-2925
 END:VCARD`;
 
-        const link = document.querySelector('a[href="Andrea_Rose_Contreras.vcf"]');
+        const link = document.querySelector('a[href="Andrea_Contreras.vcf"]');
         const blob = new Blob([vCardData], { type: 'text/vcard' });
         link.href = URL.createObjectURL(blob);
     </script>
